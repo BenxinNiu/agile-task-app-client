@@ -1,5 +1,13 @@
 <div class="container-fluid">
   <div class="navbar-wrapper">
-    <div class="navbar-control-pannel"></div>
+    <div class="navbar-control-pannel">
+      <ng-container *ngFor="let app of miniAppList;">
+        <div class="navbar-control-pannel__mini-app-wrapper">
+          <span class="navbar-control-pannel__mini-app">
+            <span class="navbar-control-pannel__mini-app-name">{{app.name}}</span>
+          </span>
+        </div>
+      </ng-container>
+    </div>
   </div>
 </div>
