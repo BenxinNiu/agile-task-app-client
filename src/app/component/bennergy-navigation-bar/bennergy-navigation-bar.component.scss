@@ -14,9 +14,37 @@
 .navbar-control-pannel {
   padding: 10px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 95%;
   height: 80px;
   background: #00aba9;
   opacity: 0.8;
   border-radius: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  &__mini-app {
+    margin-right: 10px;
+    display: inline-block;
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 10px;
+
+    &-name {
+      text-align: center;
+      position: relative;
+      top: 50px;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 50px;
+      font-size: 10px;
+    }
+  }
+
 }
