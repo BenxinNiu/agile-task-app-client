@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '../src/app/styles/variables.scss';
+.container {
+  padding: 0 !important;
+}
+.container-fluid {
+  padding: 0 !important;
+}
